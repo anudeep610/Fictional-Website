@@ -1,1 +1,1 @@
-A fictional website for a movie theater.
+Fictional website for a movie theater.
