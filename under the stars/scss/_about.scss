@@ -1,0 +1,31 @@
+.about{
+    margin: 10rem;
+
+    &__instructions{
+        display: flex;
+    }
+
+    &__rules{
+        flex:0 0 50%;
+        margin:0 2rem;
+
+        hr{
+            border: .2rem dashed var(--color-primary);
+
+            @media only screen and (max-width:$bp-small){
+                border: .1rem solid var(--color-primary);
+            }
+        }
+    }
+
+    &__heading{
+        font-size:3rem;
+        text-align: center;
+    }
+
+    &__item{
+        font-family: $font-text;
+        font-size:2rem;
+        margin: 1rem;
+    }
+}

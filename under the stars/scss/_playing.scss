@@ -1,0 +1,67 @@
+.playing{
+    margin:10rem 5rem;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    &__prices{
+        margin: 5rem 0;
+        display: flex;
+        border: .2rem solid var(--color-primary);
+
+        &-heading{
+            padding: 5rem;
+            border-right: .2rem solid var(--color-primary);
+            font-size: 2.5rem;
+        }
+
+        &-cost{
+            padding: 5rem;
+            font-size: 1.5rem;
+            font-family: $font-text;
+            h2{
+                padding: .5rem 0;
+            }
+        }
+    }
+
+    &__card{
+        flex:0 0 100%;
+
+        display: flex;
+
+        margin: 1rem 2rem;
+        padding: 1.5rem;
+        font-family: $font-text;
+
+        &-image{
+            width: 19rem;
+            height: 25rem;
+        }
+
+        &-details{
+            width: 100%;
+            margin: 3rem;
+            padding: 3rem;
+            border-top: .2rem solid var(--color-primary);
+            border-bottom: .2rem solid var(--color-primary);
+        }
+
+        &-name{
+            font-size: 3rem;
+            margin: .1rem 0;
+            font-family: $font-heading;
+        }
+
+        &-date{
+            font-size: 2rem;
+            margin: .1rem 0;
+        }
+
+        &-time{
+            font-size: 2rem;
+            margin: 0 0 2rem 0;
+        }
+    }
+}

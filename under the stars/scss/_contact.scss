@@ -1,0 +1,49 @@
+.contact{
+    margin:10rem 5rem;
+
+    &__box{
+        padding: 4rem;
+        border: .2rem solid var(--color-primary);
+
+        display: flex;
+
+        @media only screen and (max-width:$bp-small){
+            flex-direction: column;
+        }
+    }
+
+    &__box-2{
+        display: flex;
+        justify-content: center;
+    }
+
+    &__input{
+        border: .2rem solid var(--color-white);
+        background-color: var(--color-secondary);
+        color:var(--color-primary);
+        font-size: 2rem;
+        width: 50%;
+        padding: 2rem;
+        margin:1rem;
+    }
+
+    textarea{
+        width: 90%;
+    }
+
+    .address{
+        margin: 2rem;
+        border-left: .2rem solid var(--color-primary);
+        &__text{
+            font-size: 2rem;
+            font-family: $font-text;
+            margin: 2rem 0 2rem 2rem;
+        }
+    }
+
+    .form-box{
+        margin:2rem;
+        display: flex;
+        flex-direction: column;
+    }
+}

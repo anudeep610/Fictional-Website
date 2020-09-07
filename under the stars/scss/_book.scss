@@ -1,0 +1,75 @@
+.book{
+    margin:10rem 5rem;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2.5rem;
+
+    @media only screen and (max-width:$bp-medium){
+        grid-template-columns: auto;
+    }
+
+    #book-name{
+        font-size: 5rem;
+    }
+
+    #book-image{
+        width: 100%;
+    }
+
+    #book-date{
+        font-size: 2rem;
+        font-family: $font-text;
+        margin: 1rem 0;
+    }
+
+    #book-time{
+        font-size: 2rem;
+        font-family: $font-text;
+        margin: 1rem 0;
+    }
+    #book-text{
+        font-size: 1.5rem;
+        font-family: $font-text;
+        margin: 1rem 0;
+    }
+
+    &__input-box{
+        font-size:2rem;
+        font-family: $font-text;
+        input{
+            margin:1rem;
+            padding: 2rem 0.3rem;
+            background-color: var(--color-secondary);
+            border:.2rem solid var(--color-primary);
+            font-size:1.5rem;
+            width: 15%;
+            color:var(--color-primary);
+        }
+    }
+
+    button{
+        outline: none;
+        margin: 3rem 0;
+        padding: 1.5rem 3rem;
+        border: none;
+        border-radius: .2rem;
+        transition: all .2s;
+
+        &:hover{
+            transform: translateY(-2px) scale(1.1);
+            box-shadow: 0 2rem 3rem #000;
+        }
+    
+        &:active{
+            transform: translateY(0)  scale(0.9);
+            box-shadow: none;
+        }
+    }
+}
+
+.book__print{
+    .price{
+        font-size: 4rem;
+    }
+}

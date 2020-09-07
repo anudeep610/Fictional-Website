@@ -1,0 +1,31 @@
+.email{
+    margin: 10rem 5rem;
+    display: flex;
+    flex-direction: column;
+    
+    text-align: center;
+    width: 55%;
+    margin: 0 auto;
+
+    &__text{
+        font-family: $font-text;
+        font-size: 1.5rem;
+    }
+
+    &__input{
+        border: .2rem solid var(--color-primary);
+        outline: none;
+        padding: 2rem 1rem;
+        margin: 2rem 0;
+        background-color:var(--color-secondary);
+        font-weight: 500;
+
+        &::placeholder,&{
+            font-weight: 500;
+            font-size: 3rem;
+            color:var(--color-primary);
+            text-align: center;
+            opacity: 1;
+        }
+    }
+}
