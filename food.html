@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Under The Stars</title>
+        <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@200;500&family=Dancing+Script:wght@700&family=Suez+One&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./css/main.css">
+    </head>
+    <body>
+        <header class="header">
+            <nav class="header__nav">
+                <div class="header__brand">
+                    <h1> <a href="./index.html"> Under the stars </a></h1>
+                </div>
+                <ul class="header__list">
+                    <li class="header__item"><a href="./about.html" class="header__link">About us</a></li>
+                    <li class="header__item"><a href="./playing.html" class="header__link">Now playing</a></li>
+                    <li class="header__item"><a href="./food.html" class="header__link">Food court</a></li>
+                    <li class="header__item"><a href="./contact.html" class="header__link">Contact us</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <section class="eatery">
+            <h1 class="heading-4">Grab a bite</h1>
+            <div class="eatery__box--outer">
+                <div class="eatery__box--inside">
+                    <h1 class="eatery__heading">Snacks</h1>
+                    <ul class="eatery__list">
+                        <li class="eatery__item">Nachos.............Rs. <span>100</span><input type="number" min="0" value="0"></li>
+                        <li class="eatery__item">Burger.............Rs. <span>150</span><input type="number" min="0" value="0"></li>
+                        <li class="eatery__item">Garlic bread.......Rs. <span>160</span><input type="number" min="0" value="0"></li>
+                        <li class="eatery__item">Pizza..............Rs. <span>110</span><input type="number" min="0" value="0"></li>
+                        <li class="eatery__item">Popcorn............Rs. <span>130</span><input type="number" min="0" value="0"></li>
+                        <li class="eatery__item">Fries..............Rs. <span>150</span><input type="number" min="0" value="0"></li>
+                        <li class="eatery__item">Chips..............Rs. <span>100</span><input type="number" min="0" value="0"> </li>
+                        <li class="eatery__item">Veg. roll..........Rs. <span>150</span><input type="number" min="0" value="0"> </li>
+                        <li class="eatery__item">Veg. sandwich......Rs. <span>140</span><input type="number" min="0" value="0"> </li>
+                        <li class="eatery__item">Vada pav...........Rs. <span>100</span><input type="number" min="0" value="0"> </li>
+                        <li class="eatery__item">Cake...............Rs. <span>145</span><input type="number" min="0" value="0"> </li>
+                    </ul>
+                </div>
+                <div class="eatery__box--inside">
+                    <h1 class="eatery__heading">Drinks</h1>
+                    <ul class="eatery__list">
+                        <li class="eatery__item">Water..............Rs. <span>50</span><input type="number" min="0" value="0"> </li>
+                        <li class="eatery__item">Oreo milkshake.....Rs. <span>150</span><input type="number" min="0" value="0"> </li>
+                        <li class="eatery__item">Coffee.............Rs. <span>100</span><input type="number" min="0" value="0"> </li>
+                        <li class="eatery__item">Apple juice........Rs. <span>120</span><input type="number" min="0" value="0"> </li>
+                        <li class="eatery__item">Coke...............Rs. <span>100</span><input type="number" min="0" value="0"> </li>
+                        <li class="eatery__item">Fanta..............Rs. <span>100</span><input type="number" min="0" value="0"> </li>
+                        <li class="eatery__item">Sprite.............Rs. <span>100</span><input type="number" min="0" value="0"> </li>
+                        <li class="eatery__item">Red bull...........Rs. <span>100</span><input type="number" min="0" value="0"> </li>
+                        <li class="eatery__item">Pepsi..............Rs. <span>100</span><input type="number" min="0" value="0"> </li>
+                        <li class="eatery__item">Butterscotch.......Rs. <span>180</span><input type="number" min="0" value="0"> </li>
+                        <li class="eatery__item">Lime juice.........Rs. <span>110</span><input type="number" min="0" value="0"> </li>
+                    </ul>
+                    <button id="add">Add</button>
+                    <button id="reset">Reset</button>
+                </div>
+            </div>
+            <div class="eatery__calculation">
+                <div class="eatery__calculation-box">
+                    <p id="total-number">Total no of selected items:  <span id="total-number-value"></span></p>
+                </div>
+                <div class="eatery__calculation-box">
+                    <p id="total-price">Price:  <span id="total-price-value"></span></p>
+                </div>
+                <div class="eatery__calculation-box">
+                    <p id="gst">Tax(18% of Price):  <span id="tax-value"></span></p>
+                </div>
+                <div class="eatery__calculation-box">
+                    <p id="bill">Total amount:  <span id="bill-value"></span></p>
+                </div>
+            </div>
+
+            <div class="eatery__confirmation off">
+                <div class="input-box">
+                    <label for="seatNumber">Enter your ticket number:</label>
+                    <input id="seatValue" name="seatNumber" type="text">
+                </div>
+                <button id="confirm">Confirm</button>
+                <p class="confirm_statement off">We have received your order and it will be delivered to you soon.Please pay Rs. <span id="confirmAmount"></span>  to the delivery agent.</p>
+            </div>
+
+        </section>
+
+        <footer class="footer">
+            <div class="footer__details">
+                <h1 class="footer__heading">Under the stars</h1>
+                <p class="footer__text"> <b> &copy; 2020 ARAVAPALLI ANUDEEP ALL RIGHTS RESERVED </b> <br> Images taken from <a href="https://www.freepik.com/">freepik</a> and edited using <a href="https://www.gimp.org/">Gimp</a> <br> SVG icons from <a href="https://www.flaticon.com/">Flaticon</a> <br> Fonts from <a href="https://fonts.google.com">google fonts</a> </p>
+            </div>
+
+            <div class="footer__nav">
+                <h1 class="heading-3">Quick links</h1>
+                <ul class="footer__list">
+                    <li class="footer__item"><a href="./index.html" class="footer__link">Home</a></li>
+                    <li class="footer__item"><a href="./about.html" class="footer__link">About</a></li>
+                    <li class="footer__item"><a href="./playing.html" class="footer__link">Now playing</a></li>
+                    <li class="footer__item"><a href="./food.html" class="footer__link">Food court</a></li>
+                    <li class="footer__item"><a href="./contact.html" class="footer__link">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__contact">
+                <h1 class="heading-3">Contact</h1>
+                <p class="footer__address"> #12,abc main road,qwerty <br> underthestars@abc.com <br> Tel.no.-453678545637 </p>
+                <a class="btn-secondary" href="https://www.google.com/maps">View on map</a>
+            </div>
+
+            <div class="footer__buttons">
+                <a class="btn-secondary" href="./playing.html">Buy tickets</a>
+
+                <div class="social">
+                    <a href="https://www.facebook.com/">
+                        <img class="social__icon" src="./images/facebook.svg" alt="facebook icon">
+                    </a>
+
+                    <a href="https://www.instagram.com/">
+                        <img class="social__icon" src="./images/instagram-sketched.svg" alt="instagram icon">
+                    </a>
+
+                    <a href="https://www.twitter.com/">
+                        <img  class="social__icon" src="./images/twitter.svg" alt="twitter icon">
+                    </a>
+                </div>
+
+            </div>
+        </footer>
+        <script src="./javaScript/scripts.js"></script>
+    </body>
+</html>
